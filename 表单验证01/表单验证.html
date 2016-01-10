@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>表单验证01</title>
+  <link href="semantic.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="ui three column grid">
+    <div class="column">
+    </div>
+    <div class="column">
+      <br>
+      <div class="ui segment">
+        <div class="formexample">
+          <form class="ui form">
+            <div class="field">
+              <label>昵称</label>
+              <input name="empty" type="text">
+            </div>
+            <div class="field">
+              <label>性别</label>
+              <select name="dropdown" class="ui dropdown">
+                <option value="">选择</option>
+                <option value="male">男</option>
+                <option value="female">女</option>
+              </select>
+            </div>
+            <div class="field">
+              <label>爱好</label>
+              <input name="digit" type="text">
+            </div>
+            <div class="field">
+              <label>邮箱</label>
+              <input name="email" type="text">
+            </div>
+            <div class="inline field">
+              <div class="ui checkbox">
+                <input name="checkbox" type="checkbox">
+                <label>同意 “协议”</label>
+              </div>
+            </div>
+            <div class="ui submit button">提交</div>
+            <div class="ui reset button">重置</div>
+  			<div class="ui clear button">清空</div>
+            <div class="ui error message"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="column">
+    </div>
+  </div>
+
+  <script src="jquery-1.11.2.min.js"></script>
+  <script src="semantic.min.js"></script>
+  <script src="diy/01.js"></script>
+</body>
+</html>
